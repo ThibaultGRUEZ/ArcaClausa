@@ -1,0 +1,15 @@
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\PackageInfo.xml
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\MyBrain.exe.config
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\MyBrain.XML
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\MyBrain.exe
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\MyBrain.pdb
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\Constellation.Common.dll
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\Constellation.Common.xml
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\obj\Debug\MyBrain.csproj.CoreCompileInputs.cache
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\obj\Debug\MyBrain.csproj.CopyComplete
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\obj\Debug\MyBrain.exe
+C:\Users\Thibault\source\repos\ConstellationPackageConsole1\MyBrain\obj\Debug\MyBrain.pdb

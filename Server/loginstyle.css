@@ -1,0 +1,75 @@
+html{
+    background-image: url("cle1.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.container{
+    /* Centré horizontalement */
+    margin-left: auto;
+    margin-right: auto;
+    width : 18%;
+    /* Centré verticalement */
+    margin-top: 47vh; 
+    transform: translateY(-50%); 
+    /* Style */
+    background-color: white;
+    opacity: 0.85;
+    border : 7px solid #3D1508;
+    border-radius : 20px;
+}
+
+#div_login{
+    text-align: center;
+    margin : 60px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Georgia";
+    font-size : 230%;
+}
+
+.textbox{
+    margin : 15px;
+    text-align: center;
+    border : 2px solid #976756;
+    padding: 10px;
+    font-family: "Georgia";
+}
+
+#but_submit{
+    padding : 10px;
+    margin: 20px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    border : 4px solid #976756;
+    border-radius : 20px;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 100%;
+    opacity: 1.0;
+    animation-name: colorChange;
+    animation-duration: 6s;
+}
+
+#but_submit:hover{
+    background-color: white;
+}
+
+p{
+    color : red;
+    font-family : "Georgia";
+    border-style: dotted;
+}
+
+@keyframes colorChange{
+    from {background-color: black;color: white;}
+    to {background-color: whitesmoke;color: black;}
+}
+
+#test{
+    font-size: 200%;
+    color : red;
+    text-align : center;
+}
