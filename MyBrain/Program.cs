@@ -1,4 +1,4 @@
-﻿using Constellation;
+using Constellation;
 using Constellation.Package;
 using System;
 using System.Collections.Generic;
@@ -39,7 +39,7 @@ namespace MyBrain
             newValues.Login = login;
             newValues.Pass = password;
             PackageHost.PushStateObject("Values", newValues, lifetime: 50);
-            PackageHost.WriteInfo("Initializing default settings, next reset in" + delay + "minutes");
+            PackageHost.WriteInfo("Initializing default settings, next reset in " + delay + " minutes");
             PackageHost.WriteInfo("Receiving app data");
         }
         public override void OnStart()
@@ -86,7 +86,6 @@ namespace MyBrain
             login = e.NewState.DynamicValue.Login;
             pass = e.NewState.DynamicValue.Pass;
             myGuid = Auth(pass, login, latitude, longitude);
-           // myGuid = Guid.NewGuid();
             String myGuidString = myGuid.ToString();
             PackageHost.WriteInfo("generated token : {0}", myGuid);
             PackageHost.WriteInfo("Sending generated token");
@@ -102,7 +101,7 @@ namespace MyBrain
                      String responseC = myGuidString + "fr42kilj8";  //deuxième envoi du token + clé de sécurite
                      PackageHost.WriteInfo(" Sending token + key ");
                      PackageHost.SendMessage(MessageScope.Create("ConstellationPackagePython2"), "reponse", responseC);
-                     // PackageHost.SendMessage(MessageScope.Create("PushBullet"), "PushNote", new object[] { "Safe Opening Request", "Coffre dévérouillé" });
+                     
                      
                  }).GetProxy().question<String>(myGuidString);
             }
@@ -131,9 +130,9 @@ namespace MyBrain
             Console.WriteLine(responseFromServer);
 
             //cas selon la réponse du serveur
-            if (responseFromServer == "\nyoushallpass")
+            if (responseFromServer == "youshallpass")
             {
-                //accès authorisé, génération d'un token valide
+                //accès autorisé, génération d'un token valide
                 Guid g;
                 g = Guid.NewGuid();
                 Console.WriteLine(g);
@@ -144,7 +143,7 @@ namespace MyBrain
                 response.Close();
                 return g;
             }
-            if (responseFromServer == "\nlogin")
+            if (responseFromServer == "login")
             {
                 //erreur de login, génération d'un token nul
                 Guid l = Guid.Empty; ;
@@ -154,10 +153,10 @@ namespace MyBrain
                 reader.Close();
                 dataStream.Close();
                 response.Close();
-                //reset();
+                reset();
                 return l;
             }
-            if (responseFromServer == "\ncoord")
+            if (responseFromServer == "coord")
             {
                 //erreur de position, génération d'un token nul
                 Guid g = Guid.Empty; ;
@@ -167,10 +166,10 @@ namespace MyBrain
                 reader.Close();
                 dataStream.Close();
                 response.Close();
-                //reset();
+                reset();
                 return g;
             }
-            if (responseFromServer == "\nlock")
+            if (responseFromServer == "lock")
             {
                 //système verouillé par l'administrateur, génération d'un token nul
                 Guid q = Guid.Empty; ;
@@ -180,7 +179,7 @@ namespace MyBrain
                 reader.Close();
                 dataStream.Close();
                 response.Close();
-                //reset();
+                reset();
                 return q;
             }
             //autre cas
@@ -192,9 +191,10 @@ namespace MyBrain
             //Guid w = Guid.Empty;
             Console.WriteLine(w);
             PackageHost.WriteInfo("Server response : granted");
-            if (push == true) { PackageHost.SendMessage(MessageScope.Create("PushBullet"), "PushNote", new object[] { "Safe Opening RequeST", "Access granted" }); }
-            //reset();
+            if (push == true) { PackageHost.SendMessage(MessageScope.Create("PushBullet"), "PushNote", new object[] { "Safe Opening Request", "Unexpected error" }); }
+            reset();
             return w;
         } 
     }
 }
+
