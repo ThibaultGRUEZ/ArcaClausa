@@ -9,3 +9,4 @@ Server => Database, data comparison functions and admin web page.
 
 Arduino => Arduino setup file
 
+www => ressource files from the Ionic mobile app
