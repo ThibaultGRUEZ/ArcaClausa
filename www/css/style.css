@@ -1,0 +1,81 @@
+.myview{
+     
+     background-repeat: no-repeat;
+     background-color:grey;
+     background-size: 100%;
+
+}
+
+.list{
+	width: 40%;
+	margin: auto;
+}
+
+
+.red{
+	color : red;
+}
+
+.title{
+	text-align: center;
+	font-family: "Texte données";
+	
+}
+
+.data{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.quit{
+	display:block;
+	width:200px;
+    height:70px;
+    line-height:30px;
+    border: 2px solid #f5f5f5;
+    border-radius: 80%;
+    color:#f5f5f5;
+    text-align:center;
+    background: #464646;
+     -moz-border-radius: 4px;
+     -webkit-border-radius: 4px;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+    margin: auto;
+}
+
+.button{
+	display:block;
+    width:150px;
+    height:150px;
+    line-height:50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    background: #464646;
+    
+    font-size:20px;
+    font-weight:bold;
+    margin: auto;
+}
+
+.coord{
+	font-family: "Texte données";
+	color:#f5f5f5;
+	margin: auto;
+	text-align:center;
+}
+
+.button{
+	font-family: "Texte données";
+	color:#f5f5f5;
+	margin: auto;
+}
+
+@font-face {
+	font-family: "Texte données";
+	src: url('BEBAS.ttf');
+}
